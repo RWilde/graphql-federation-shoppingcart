@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: cart-service
+    port: 8080
+spring:
+  data:
+    mongodb:
+      database: CheckoutMicroservice
+      host: localhost
+      port: 27017
+
+graphiql:
+  enabled: true
+  subscriptions:
+    timeout: 300000
+  graphiql:
+    enabled: true
