@@ -1,8 +1,8 @@
-package main.resolvers;
+package com.graphql.resolvers;
 
 import graphql.kickstart.tools.GraphQLMutationResolver;
-import main.models.User;
-import main.service.UserRepository;
+import com.graphql.models.User;
+import com.graphql.service.UserRepository;
 
 public class UserMutationResolver implements GraphQLMutationResolver {
 

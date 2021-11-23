@@ -4,7 +4,7 @@ plugins {
 }
 
 version = "0.1"
-group = "com.user"
+group = "com.graphql"
 
 repositories {
     mavenCentral()
@@ -15,7 +15,7 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("com.user.*")
+        annotations("com.graphql.*")
     }
 }
 
@@ -51,7 +51,7 @@ dependencies {
 
 
 application {
-    mainClass.set("com.user.Application")
+    mainClass.set("com.graphql.Application")
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("11")

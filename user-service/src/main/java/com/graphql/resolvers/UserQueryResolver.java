@@ -1,8 +1,8 @@
-package main.resolvers;
+package com.graphql.resolvers;
 
 import graphql.kickstart.tools.GraphQLQueryResolver;
-import main.models.User;
-import main.service.UserRepository;
+import com.graphql.models.User;
+import com.graphql.service.UserRepository;
 
 public class UserQueryResolver implements GraphQLQueryResolver {
 
@@ -12,7 +12,7 @@ public class UserQueryResolver implements GraphQLQueryResolver {
         this.userRepository = userRepository;
     }
 
-    public User findById(String userId){
+    public User findById(String userId) {
         return userRepository.findById(userId);
     }
 

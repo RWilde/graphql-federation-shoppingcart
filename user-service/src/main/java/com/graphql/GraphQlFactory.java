@@ -1,4 +1,4 @@
-package main;
+package com.graphql;
 
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientSettings;
@@ -7,9 +7,9 @@ import graphql.GraphQL;
 import graphql.kickstart.tools.SchemaParser;
 import io.micronaut.context.annotation.Bean;
 import io.micronaut.context.annotation.Factory;
-import main.resolvers.UserMutationResolver;
-import main.resolvers.UserQueryResolver;
-import main.service.UserRepository;
+import com.graphql.resolvers.UserMutationResolver;
+import com.graphql.resolvers.UserQueryResolver;
+import com.graphql.service.UserRepository;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.codecs.pojo.PojoCodecProvider;
 

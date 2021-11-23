@@ -1,7 +1,8 @@
-package main.models;
+package com.graphql.models;
 
 public class User {
-    private String userName;    private String userId;
+    private String userName;
+    private String userId;
 
     public User(String userName, String userId) {
         this.userName = userName;

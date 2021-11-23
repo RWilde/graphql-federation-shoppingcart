@@ -1,24 +1,24 @@
-package main.service;
+package com.graphql.service;
 
 import com.mongodb.client.MongoCollection;
-import main.models.User;
+import com.graphql.models.User;
 import org.bson.Document;
 
 import java.util.List;
 
 public class UserRepository {
-//    private final MongoCollection<Document> users;
+    //    private final MongoCollection<Document> users;
     List<User> users = List.of(new User("1", "rebecca"));
 
     public UserRepository(MongoCollection<Document> carts) {
 //        this.users= carts;
     }
 
-    public List<User> findAll(){
+    public List<User> findAll() {
         return users;
     }
 
-    public User findById(String userId){
+    public User findById(String userId) {
         return users.get(0);
     }
 }

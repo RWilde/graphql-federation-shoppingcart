@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service/gateway-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/graphql-federation-shoppingcart.iml" filepath="$PROJECT_DIR$/.idea/graphql-federation-shoppingcart.iml" />
     </modules>
   </component>
 </project>
