@@ -1,0 +1,19 @@
+micronaut:
+  server:
+    port: 8081
+  application:
+    name: user-service
+
+spring:
+  data:
+    mongodb:
+      database: CheckoutMicroservice
+      host: localhost
+      port: 27017
+
+graphiql:
+  enabled: true
+  subscriptions:
+    timeout: 300000
+  graphiql:
+    enabled: true

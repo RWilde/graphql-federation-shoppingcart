@@ -1,0 +1,25 @@
+type Query {
+    user(cartId: String): User!
+    users: [User]!
+}
+
+type Mutation {
+    createUser(user: UserInput): User
+    updateUser(user: UserUpdate): User!
+    deleteUser(userId: String): Boolean!
+}
+
+
+type User @key(fields:"id") @extends{
+    id: ID!
+    userName: String!
+}
+
+input UserInput {
+    id: ID!
+    userName: String!
+}
+
+input UserUpdate {
+    id: ID!
+}
